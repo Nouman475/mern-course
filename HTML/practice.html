@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <div id="parent">
+      <p id="p1">This is a paragraph.</p>
+      <p id="p2">This is another paragraph.</p>
+    </div>
+    <div class="parent">
+      <p class="pr">This is a paragraph.</p>
+      <p class="pr">This is another paragraph.</p>
+    </div>
+
+    <script>
+      let parent = document.getElementById("parent");
+      let paragraph = document.createElement("p");
+      paragraph.innerHTML = "This is the third Paragraph.";
+      parent.appendChild(paragraph);
+      let ele = document.querySelectorAll(".pr");
+      console.log(ele)
+    </script>
+  </body>
+</html>

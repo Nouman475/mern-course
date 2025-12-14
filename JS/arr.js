@@ -25,10 +25,11 @@
 // map
 
 let myArr = [1, 2, 3, 4, 5];
-let newArr = myArr.map(ele => ele * ele);
+let newArr = myArr.map((ele) => ele * ele);
 
 let filteredArr = myArr.filter((ele) => {
   return ele % 2 != 0;
 });
+
 
 console.log(filteredArr);

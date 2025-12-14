@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Form Handling in JS</title>
+  </head>
+  <body>
+    <h1>Contact Form</h1>
+    <form id="form">
+      <label for="email">Email:</label> <br />
+      <input type="email" name="email" id="email" /> <br />
+
+      <label for="message">message:</label> <br />
+      <input type="text" name="message" id="message" /> <br />
+        <br/>
+      <button id="submit-btn" type="submit">Submit</button>
+    </form>
+
+    <script>
+        let form = document.getElementById("form")
+        let submitBtn = document.getElementById("submit-btn")
+        console.log(submitBtn)
+
+        form.addEventListener("click",(event)=>{
+            event.preventDefault()
+            console.log(event)
+            let emailIn = document.getElementById("email").value
+            let messageIn = document.getElementById("message").value
+            console.log(emailIn)
+            console.log(messageIn)
+        })
+        let title = document.getElementById("title")
+        let titleText = "Form Handling in JS"
+        setInterval(()=>{
+          title.innerText = "Kashif!!"
+        },2000)
+        setInterval(()=>{
+          title.innerText = titleText
+        },4000)
+        
+    </script>
+  </body>
+</html>
